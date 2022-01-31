@@ -127,3 +127,4 @@ users.acl
 /app/static/tmp
 node_modules/
 package-lock.json
+psd/
