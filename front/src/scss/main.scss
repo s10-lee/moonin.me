@@ -138,23 +138,66 @@ $gold-sun: #F0BE72;
 $gold-burly: #e0b985;
 $gold-light: #cfb886;
 
+$dark-01: #242423;
+
+//$dark-blue: #2F3944;
+//$db-01: #05192d;
+//$db-02: #090C10;
 
 
-$dark-blue: #2F3944;
-$db-01: #05192d;
-$db-02: #090C10;
-
-
-header {
+header, section, main {
   padding: 3rem;
   display: flex;
+  position: relative;
   color: $gold-satin;
 }
+
+header {
+  justify-content: center;
+  text-align: center;
+  min-height: 400px;
+}
+
+
+section {
+
+}
+
+
+.dark {
+  background: $dark-01;
+  min-height: 300px;
+}
+
+
+.first {
+  background: url(../assets/img/logo.png) no-repeat center 20px;
+  background-size: 100px;
+  padding-top: 120px;
+}
+
+.second {
+  background: url(../assets/img/photo-01.png) no-repeat 52%;
+  background-size: contain;
+  min-height: 500px;
+}
+
+.third {
+  background: $dark-01;
+  min-height: 300px;
+}
+
+
 
 h1, h2, h3, h4, h5 {
   font-family: 'Arsenica', Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -170,14 +213,6 @@ video {
   opacity: .5;
 
 }
-
-.block {
-  height: 32%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 //************* STYLES *************/
 @import "~bootstrap/scss/forms";
