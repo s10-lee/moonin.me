@@ -16,7 +16,8 @@ $spacers: map-merge(
     6: ($spacer * 5),
     7: ($spacer * 7),
     8: ($spacer * 10),
-    9: ($spacer * 13)
+    9: ($spacer * 13),
+    10: ($spacer * 15)
   ),
   $spacers
 );
@@ -112,6 +113,9 @@ body {
 .fs-9 {
   font-size: 1.125rem;
 }
+.fs-10 {
+  font-size: 1.5rem;
+}
 .rounded-4 {
   border-radius: .4rem;
 }
@@ -126,7 +130,6 @@ body {
 
 
 /*** STYLES ***/
-
 
 
 $gold-orange: #ffa35a;
@@ -152,59 +155,36 @@ header, section, main {
   color: $gold-satin;
 }
 
-header {
-  justify-content: center;
-  text-align: center;
-  min-height: 400px;
-}
-
-
-section {
-
-}
-
-
-.dark {
-  background: $dark-01;
-  min-height: 300px;
-}
-
-
-.first {
+.logo {
   background: url(../assets/img/logo.png) no-repeat center 20px;
   background-size: 100px;
   padding-top: 120px;
 }
 
-.second {
-  background: url(../assets/img/photo-01.png) no-repeat 52%;
-  background-size: contain;
-  min-height: 500px;
+.box {
+  border: 1px dashed $gray-400;
+  color: $gray-700;
+  background-color: #fafbfc;
 }
-
-.third {
-  background: $dark-01;
-  min-height: 300px;
-}
-
 
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Arsenica', Arial, sans-serif;
+  // font-family: 'Arsenica', Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  white-space: nowrap;
+  color: $gray-800;
 }
-h3 {
-  font-size: 4rem;
+
+h2 {
+  font-size: 3.5rem;
 }
 
 video {
@@ -212,6 +192,26 @@ video {
   max-width: 100%;
   opacity: .5;
 
+}
+
+#scroll-debug {
+  position: fixed;
+  left: 3rem;
+  top: 3rem;
+  padding: .5rem 1.5rem;
+  background: $dark;
+  color: $white;
+  z-index: 9000;
+  text-align: center;
+  max-width: 120px;
+
+
+  box-shadow: 1px 2px 3px 1px rgba(0,0,0, .2);
+  h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
 }
 
 //************* STYLES *************/
@@ -244,3 +244,63 @@ video {
 
 //************* Mine *************/
 @import "transitions";
+
+
+#left-branch {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 40vw;
+  height: 40vw;
+  min-width: 500px;
+  min-height: 500px;
+  background: url(../assets/img/left-branch-blur.png) no-repeat left top;
+  background-size: contain;
+  z-index: $zindex-dropdown;
+}
+
+#right-branch {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 35vw;
+  height: 35vw;
+  min-width: 500px;
+  min-height: 500px;
+  background: url(../assets/img/right-branch.png) no-repeat right;
+  background-size: contain;
+  transition: transform .15s ease-out;
+  z-index: $zindex-dropdown;
+}
+
+#flying-cards {
+  // width: 850px;
+  // height: 511px;
+  width: 100%;
+  height: 400px;
+  background: url(../assets/img/cards-flying.png) no-repeat 100px;
+  background-size: contain;
+}
+
+#dark-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, $body-bg, $dark-blue 60%) bottom;
+  width: 100%;
+  height: 200vh;
+  z-index: -1;
+}
+
+
+.half-moon-01 {
+  padding: 3rem 14rem 3rem 3rem;
+
+  background-image:
+          url(../assets/img/moon-one.png),
+          url(../assets/img/moon-two.png)
+;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 97% 50%, 97% 52%;
+}

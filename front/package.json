@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port 5050 --mode local",
+    "serve": "vue-cli-service serve --port 5050 --host 127.0.0.1 --mode local",
     "build": "vue-cli-service build --mode production",
     "build:dev": "vue-cli-service build --mode development",
     "postbuild": "./postbuild.sh",
@@ -19,6 +19,7 @@
     "es6-promise": "^4.2.8",
     "jwt-decode": "^3.1.2",
     "vue": "^3.1.5",
+    "vue-rellax": "^0.2.0",
     "vue-router": "^4.0.10",
     "vuex": "^4.0.2"
   },
