@@ -33,13 +33,12 @@
         </div>
       </div>
 
-      <div id="flying-cards" v-parallax="makeParallax(15)"></div>
+      <div id="flying-cards" v-parallax="makeParallax(10)"></div>
 
-
-      <div class="row mb-6 justify-content-center" v-parallax="makeParallax(12)">
+      <div class="row justify-content-center" v-parallax="makeParallax(15)">
         <div class="col-6">
           <div class="box p-5">
-            <h3 class="mb-5">BOX 2</h3>
+            <h3 class="mb-5">HEADER BOX 2</h3>
             <p>
               Education is power. Let go of your fear. Our lessons and card database equip you with the knowledge to understand Tarot and its role as a spiritual tool. No creepy shenanigans here, pinky swear.
             </p>
@@ -47,6 +46,25 @@
         </div>
       </div>
 
+    </div>
+
+
+    <div id="dark-block" class="mb-10">
+      <div class="container">
+        <div class="row my-5 justify-content-center">
+          <div class="col-4 offset-3">
+            <div class="p-5">
+              <h3 class="mb-5 text-gold-satin" style="justify-content: start;">DARK HEADER</h3>
+              <p class="text-white">
+                Education is power. Let go of your fear. Our lessons and card database equip you with the knowledge to understand Tarot and its role as a spiritual tool. No creepy shenanigans here, pinky swear.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
 
       <div class="row mb-6 justify-content-center" v-parallax="makeParallax(8)">
         <div class="col-6">
@@ -58,8 +76,6 @@
           </div>
         </div>
       </div>
-
-      <div id="dark-background" v-parallax="makeParallax(35)"></div>
 
       <div class="row box">
         <div class="col-12">
@@ -80,6 +96,8 @@
           </div>
         </div>
       </div>
+
+      <div id="dark-background" v-parallax="makeParallax(35)"></div>
 
     </div>
   </div>
