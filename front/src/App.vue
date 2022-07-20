@@ -100,6 +100,7 @@
       <div id="dark-background" v-parallax="makeParallax(35)"></div>
 
     </div>
+
   </div>
 </template>
 
