@@ -22,7 +22,7 @@
       <div class="row mb-8 justify-content-center">
         <div class="col-6">
           <div class="box p-5">
-            <h3 class="mb-5">Заголовок</h3>
+            <h3 class="mb-5">Header</h3>
             <p>
               Aenean at lectus sed neque tempor volutpat quis id neque. Sed enim purus, ultrices vitae ultricies id, eleifend at eros. Sed non lorem a elit tempus semper. Nulla facilisi. Cras porttitor consequat nunc sed egestas. Vestibulum sit amet consectetur turpis. Nullam euismod purus at ipsum vehicula vulputate. Vivamus eu massa in libero ornare interdum elementum blandit mauris. Nullam porttitor id neque in rutrum.
             </p>
