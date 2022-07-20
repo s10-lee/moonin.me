@@ -6,8 +6,6 @@
     "serve": "vue-cli-service serve --port 5050 --host 127.0.0.1 --mode local",
     "build": "vue-cli-service build --mode production",
     "build:dev": "vue-cli-service build --mode development",
-    "postbuild": "./postbuild.sh",
-    "postbuild:dev": "./postbuild.sh",
     "watch": "vue-cli-service build --mode development --watch --port 5050",
     "lint": "vue-cli-service lint"
   },
