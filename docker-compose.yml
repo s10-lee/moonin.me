@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    env_file:
+      - .env.prod
+    volumes:
+      - web_root:/usr/share/nginx/html
+      - certbot_etc:/etc/letsencrypt
+      - certbot_var:/var/lib/letsencrypt
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - local_net
+
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - certbot_etc:/etc/letsencrypt
+      - certbot_var:/var/lib/letsencrypt
+      - web_root:/usr/share/nginx/html
+    networks:
+      - local_net
+    # command: certonly --webroot --webroot-path=/usr/share/nginx/html --email s10@artel.works --agree-tos --no-eff-email --staging -d labgrow.io
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html --email s10@artel.works --agree-tos --no-eff-email --force-renewal -d moonin.me
+
+
+networks:
+  local_net:
+    driver: bridge
+
+
+volumes:
+  web_root:
+  certbot_etc:
+  certbot_var:

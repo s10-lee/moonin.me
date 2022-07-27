@@ -38,7 +38,7 @@
       <div class="row justify-content-center" v-parallax="makeParallax(15)">
         <div class="col-6">
           <div class="box p-5">
-            <h3 class="mb-5">HEADER BOX 2</h3>
+            <h3 class="mb-5">HEADER</h3>
             <p>
               Education is power. Let go of your fear. Our lessons and card database equip you with the knowledge to understand Tarot and its role as a spiritual tool. No creepy shenanigans here, pinky swear.
             </p>
@@ -69,7 +69,7 @@
       <div class="row mb-6 justify-content-center" v-parallax="makeParallax(8)">
         <div class="col-6">
           <div class="box p-5">
-            <h3 class="mb-5">BOX 3</h3>
+            <h3 class="mb-5">HEADER</h3>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
             </p>
